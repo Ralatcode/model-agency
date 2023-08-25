@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0 2rem;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+/* margin: 0 auto; */
+display: block;
+}
+h3{
+    text-align: center;
+    margin: 3rem 0;
+    color: brown;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+body{
+    background-color: white;
+}
+
+
+header {
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 2;
+    padding: 1rem 2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+#img-logo{
+    display: grid;
+}
+#navbar ul{
+    display: flex;
+}
+
+/* WELCOME SECTION STARTS */
+#welcome-section{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: url(image6.jpg);
+    padding: 0 5rem;
+    object-fit: cover;
+}
+#welcome-section p{
+    max-width: 300px;
+    margin: -7rem 0;
+    font-size: 18px;
+    word-spacing: 3px;
+}
+#welcome-section button{
+    background-color: brown;
+    margin-top: 15rem;
+    border: none;
+    padding: 1rem 1.5rem;
+}
+
+/* WELCOME SECTION END */
+#container{
+    /* max-width: 1080px; */
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    padding: 0 15rem;
+    text-align: center;
+
+}
+.grid{
+    display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+  /* align-items: center; */
+
+}
+.hold-img{
+    width: 350px;
+    height:auto;
+    margin: 0 auto;
+    justify-content: center;
+  /* align-items: center; */
+}
+.line:before, .line:after{
+    background-color: #000;
+  content: " ";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  max-width: 60%;
+    
+}
+
+.grid p{
+    font-weight: bolder;
+    color: brown;
+    text-align: left;
+}
+.overlay{ 
+    position: relative;
+}
+.overlay .hold-img{
+    margin: 0.5rem 0;
+} 
+.overlay p{
+    position: absolute;
+    color: green;
+    bottom: 25px;
+    /* left: 10px; */
+    font-size: 2rem;
+    /* z-index: -1; */
+}
+.line:before{
+    right: 0.5em;
+    margin-left: -50%
+}
+.line:after{
+    left: 0.5em;
+    margin-right: -50%
+}
+
+.button{
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    margin: 1rem auto;
+    display: flex;
+}
+
+footer{
+    display:flex;
+    justify-content: space-around;
+    background-color: gray;
+    padding: 1rem 0;
+    text-align: center;
+    left: 0;
+    margin-top: 1rem;
+}
+footer  a{
+  margin: 0;
+}
+footer input{
+    border: none;
+    background-color: transparent;
+    color: black;
+    border-bottom: 2px solid black;
+}
+input:focus{
+    outline: none;
+}
+footer h4, footer li{
+ text-align: left;
+}
+input::placeholder{
+    color: blue;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .hold-img{
+        width: 300px;
+
+    }
+}
+@media screen and (max-width: 900px) {
+
+    .hold-img{
+        width: 250px;
+
+    }
+   
+    
+}
+@media screen and (max-width: 800px) {
+    a{
+        margin:0 1rem;
+    }
+    .hold-img{
+        width: 200px;
+
+    }
+   h3{
+    font-size: 1rem;
+   }
+    
+}
+@media screen and (max-width: 650px) {
+    #img-logo{
+        display: none;
+    }
+    a{
+        margin:0 1rem;
+    }
+    .hold-img{
+        width: 150px;
+
+    }
+   .about{
+    width: 300px;
+    justify-content: center;
+   text-align: center;
+   margin: 0 auto;
+   }
+   .overlay p{
+    font-size: 1rem;
+    
+}
+    
+}
+@media screen and (max-width: 550px) {
+
+    a{
+        margin:0 0.5rem;
+    }
+    #welcome-section{
+        background: linear-gradient(125deg, gray, blue, gray, green);
+    }
+    #container{
+        padding: 0 5rem;
+    }
+footer{
+    padding: 0 1rem;
+}   
+    
+}
+@media screen and (max-width: 500px) {
+    body{
+        background-color: red;
+    }
+    header{
+        background-color: gray;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    }
+    #navbar{
+        width: 100%;
+    }
+    #navbar ul{
+        display: block;
+        margin:  10px 0;
+        padding: 10px 0;
+         /* width: 100%; */
+    }
+    #navbar li{
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+    a{
+        margin:0 0.5rem;
+    }
+    #welcome-section{
+        background: linear-gradient(125deg, gray, blue, gray, green);
+    }
+    #container{
+        padding: 0 5rem;
+    }
+footer{
+    padding: 0 1rem;
+}   
+    
+}
+    
