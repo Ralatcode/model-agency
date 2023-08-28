@@ -60,9 +60,9 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background: url(image6.jpg);
+    background-image: url(image6.jpg);
     padding: 0 5rem;
-    object-fit: cover;
+    background-size: cover;
 }
 #welcome-section p{
     max-width: 300px;
