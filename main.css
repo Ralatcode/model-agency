@@ -27,6 +27,7 @@ h3{
 
 body{
     background-color: white;
+    
 }
 
 
@@ -63,6 +64,8 @@ header {
     background-image: url(image6.jpg);
     padding: 0 5rem;
     background-size: cover;
+    background-position: center;
+    
 }
 #welcome-section p{
     max-width: 300px;
