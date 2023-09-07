@@ -178,7 +178,11 @@ footer h4, footer li{
  text-align: left;
 }
 
-
+@media screen and (max-width: 900px) {
+    #img-logo{
+        display: none;
+    }
+}
 @media screen and (max-width: 650px) {
     header{
         background-color: var(--BGCOLOR);
