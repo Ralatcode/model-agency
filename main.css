@@ -269,14 +269,14 @@ footer h4, footer li{
         display: none;
         transform-origin: top center;
         background-color: var(--BGCOLOR);
-        animation: showMenu 0.5s ease-in-out forwards;
+        /* animation: showMenu 0.5s ease-in-out forwards; */
     }
     #navbar ul{
         display: block;
         margin: 0;
         padding: 0;
     }
-    @keyframes showMenu {
+    /* @keyframes showMenu {
         0%{
             transform: scaleX(0);
         }
@@ -286,7 +286,7 @@ footer h4, footer li{
         100%{
             transform: scaleX(1);
         }
-    }
+    } */
     nav ul li{
         display: flex;
         flex-flow: column nowrap;
@@ -304,7 +304,7 @@ footer h4, footer li{
         padding: 1rem 0;
         color: var(--BUTTON-COLOR);
     }
-    nav a:hover{
+    /* nav a:hover{
         transform: scaleY(150%);
     }
     :is(header:hover, header:focus-within) .menu-icon{
@@ -319,7 +319,7 @@ footer h4, footer li{
     }
     :is(header:hover, header:focus-within) #navbar{
       display: block;
-    }
+    } */
    
 #welcome-section p{
     margin-top: 200px;
