@@ -131,7 +131,6 @@ header {
     left: 15px;
     color: var(--COLOR);
     max-width: 50%;
-    /* font-size: 2rem; */
    line-height: 0.8;
 }
 
@@ -321,7 +320,7 @@ footer h4, footer li{
     :is(header:hover, header:focus-within) #navbar{
       display: block;
     }
-}   
+   
 #welcome-section p{
     margin-top: 200px;
     margin-left: 30px;
@@ -330,7 +329,7 @@ footer h4, footer li{
     margin-top: 100px;
     margin-left: 30px;
 }
-
+}
 @media screen and (max-width: 500px) {
     h3{
         font-size: 1.5rem;
