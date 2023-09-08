@@ -229,8 +229,9 @@ footer h4, footer li{
 @media screen and (max-width: 550px) {
     header{
         background-color: var(--BGCOLOR);
-        padding: 0.3rem 0;
-        display: block;
+        padding: 0.3rem .5rem;
+        justify-content: space-between;
+        /* display: block; */
     }
     #img-logo{
         display: flex;
