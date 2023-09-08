@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 :root{
-    --BGCOLOR: hsl(0, 57%, 72%);
-    --COLOR: hsl(0, 72%, 75%);
+    --BGCOLOR: #540808;
+    --COLOR: #EAEAEA;
+    --BUTTON-COLOR: #EFB7B7;
 }
 
 li{
@@ -13,35 +15,38 @@ li{
 }
 a{
     text-decoration: none;
-    color: black;
     margin: 0 2rem;
+    color: var(--BGCOLOR);
 }
 img{
     max-width: 100%;
     height: auto;
     display: block;
-
 }
 h3{
     text-align: center;
     margin: 1.5rem 0;
-    color: var(--COLOR);
-    font-weight: 900;
-    font-size: 1.5rem;
+    color: var(--BGCOLOR);
 }
 body{
    min-height: 100vh;
+   background-color: #f0f0f0;
+   font: 1.5rem 'Jost', sans-serif;
+   font-weight: 500;
+   color: #540808;
 }
 button:not(.menu-button, #welcome-section button){
-    background-color: var(--BGCOLOR);
+    background-color: var(--BUTTON-COLOR);
     border: none;
-    padding: 1rem 1.3rem;
-    border-radius: 5px;
-    color: #000;
+    font-family: inherit;
+    padding: 0.7rem 4.1rem;
+    border-radius: 12px;
+    color: var(--BGCOLOR);
     justify-content: center;
     align-items: center;
     margin: 0.5rem auto;
     display: flex;
+    text-transform: capitalize;
 } 
 
 header {
@@ -49,14 +54,11 @@ header {
     width: 100%;
     position: fixed;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     top: 0;
-    font-weight: bold;
-    font-size: 2rem;
     z-index: 99;
     padding: 1rem 2rem;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 } 
 #img-logo{
     display: grid;
@@ -64,39 +66,36 @@ header {
 #navbar ul{
     display: flex;
 }
-.main{
-    width: 100%;
-    position: relative;
-}
+
 /* WELCOME SECTION STARTS */
 #welcome-section{
-    color: white;
-    width: 100%;
+    width: 100%; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100vh;
     background-image: url(image6.jpg);
-    padding: 0 5rem;
     background-size: cover;
-    background-position: center;
+    background-position: center;   
 }
 #welcome-section p{
-    max-width: 300px;
-    font-size: 18px;
-    word-spacing: 3px;
-    margin-bottom: 1rem;
-    color: #000;
-    background-color: rgba(188, 178, 178, 0.104);
-    border-radius: 3px;
+    max-width: 400px;
+    font-size: 24px;
+    color: #EAEAEA;
+    margin-top: 200px;
+    margin-left: 95px;
 }
 #welcome-section button{
-    background-color: var(--BGCOLOR);
+    background-color:#540808;
     border: none;
     padding: 1rem 1.3rem;
-    border-radius: 5px;
-    color: #000;
-}
+    border-radius: 1px;
+    color: #FCF3F3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 95px;
+} 
 
 
 /* WELCOME SECTION END */
@@ -121,55 +120,90 @@ header {
 .hold-img img{
     border-radius: 30px;
 }
+.grid p{
+    font-weight: bolder;
+    color: var(--BGCOLOR);
+    text-align: left;
+}
 .model-name p{
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    left: 15px;
     color: var(--COLOR);
-    max-width: 100%;
-    background-color: hsla(0, 7%, 6%, 0.226);
+    max-width: 50%;
+    /* font-size: 2rem; */
+   line-height: 0.8;
 }
-.grid p{
-    font-weight: bolder;
-    color: var(--COLOR);
-    text-align: left;
-}
+
 .line::before, .line::after{
-    background-color: #000;
+    background-color: var(--BGCOLOR);
     content: " ";
     display: inline-block;
-    height: 1px;
+    height: 2px;
     position: relative;
     vertical-align: middle;
-    max-width: 50%;  
 }
-.line::before{
+/* .line::before{
     right: 0.5em;
     margin-left: -50%
 }
 .line::after{
     left: 0.5em;
     margin-right: -50%
+} */
+.model-button{
+    font-size: 16px;
 }
+.collab-button{
+    font-size: 24px;
+}
+.about{
+    color:#000;
+    padding: 0 3rem;  
+    justify-content: center;
+   text-align: center;
+   margin: 0 auto;
+   
+}
+#footer{
+    background-color: #C4C4C4;
+    text-align: center;
+    font-size: 1rem;
 
-footer{
+}
+.footer{
     display:flex;
     justify-content: space-around;
-    background-color: var(--BGCOLOR);
-    padding: 1rem 0;
-    text-align: center;
     left: 0;
     bottom: 0;
-    margin-top: 1rem;
+}
+.footer section{
+    margin: 1rem;
+}
+.footer #button{
+    font-size: 16px;
+    padding:  0.7rem 2.5rem;
+    display: flex;
+    justify-content: flex-end;
 }
 footer  a{
   margin: 0;
 }
+::placeholder{
+    color: var(--BGCOLOR);
+    opacity: 0.3;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
 footer input{
     border: none;
     background-color: transparent;
-    color: black;
-    border-bottom: 2px solid black;
+    color: var(--BGCOLOR);
+    border-bottom: 2px solid var(--BGCOLOR);
+    flex-shrink: 0;
+    width: 100%;
+    padding: 1rem 0.2rem;
 }
 input:focus{
     outline: none;
@@ -178,12 +212,22 @@ footer h4, footer li{
  text-align: left;
 }
 
+
 @media screen and (max-width: 900px) {
     #img-logo{
         display: none;
     }
+    #welcome-section p{
+        margin-top: 200px;
+        margin-left: 95px;
+    }
+    #welcome-section button{
+        margin-top: 200px;
+        margin-left: 95px;
+    }
+  
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
     header{
         background-color: var(--BGCOLOR);
         padding: 0.3rem 0;
@@ -259,6 +303,7 @@ footer h4, footer li{
         width: 100%;
         text-align: center;
         padding: 1rem 0;
+        color: var(--BUTTON-COLOR);
     }
     nav a:hover{
         transform: scaleY(150%);
@@ -276,16 +321,17 @@ footer h4, footer li{
     :is(header:hover, header:focus-within) #navbar{
       display: block;
     }
-    
-   .about{
-    width: 300px;
-    justify-content: center;
-   text-align: justify;
-   margin: 0 auto;
-   }
+}   
+#welcome-section p{
+    margin-top: 200px;
+    margin-left: 30px;
+}
+#welcome-section button{
+    margin-top: 100px;
+    margin-left: 30px;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
     h3{
         font-size: 1.5rem;
     }
@@ -296,12 +342,19 @@ footer h4, footer li{
       margin: 0 auto;
       justify-content: center;
     }
-footer{
+    .grid p{
+        font-size: 1rem;
+    }
+    
+.footer{
     padding: 0.5rem; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }   
-footer section{
+.footer section{
     margin: 0.5rem; 
 }   
 }
