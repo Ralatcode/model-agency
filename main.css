@@ -227,6 +227,7 @@ footer h4, footer li{
   
 }
 @media screen and (max-width: 550px) {
+    /* made chnages to the this too */
     header{
         position: relative;
         background-color: var(--BGCOLOR);
@@ -267,13 +268,14 @@ footer h4, footer li{
     .menu-icon::after{
         transform: translate(-20px, 12px);
     }
+
+    /* new code */
    #navbar{
         /* display: none; */
         /* transform-origin: top center; */
         background-color: var(--BGCOLOR);
         /* animation: showMenu 0.5s ease-in-out forwards; */
     }
-
     #navbar {
         position: absolute;
         top: 100%;
@@ -302,6 +304,8 @@ footer h4, footer li{
     .menu-button.open > .menu-icon::after {
     transform: translateX(-20px) rotate(-45deg);
     }
+
+    /* old code comment out */
 
     /* @keyframes showMenu {
         0%{
